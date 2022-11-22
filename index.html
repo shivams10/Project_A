@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surprise Meal</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- For Desktop -->
+    <div class="container">
+      <div id="menu">
+        <div class="title">
+          <img src="/assert//images/logo.jpeg" alt="logo" />
+        </div>
+        <div class="menu-item">
+          <a href="">Your Cart</a>
+          <a href="">Services</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+      <div id="food-container">
+        <header id="header">
+          <div class="address-box">
+            <i class="fa fa-map-marker your-address">Your Address</i>
+          </div>
+          <div class="utilities">
+            <i class="fa fa-tags">Offers</i>
+            <i class="fa fa-cart-plus" id="cart-plus">0 items</i>
+          </div>
+        </header>
+        <div id="food-items" class="desktop-food-items"></div>
+        <div id="cart-page" class="cart-toggle"></div>
+      </div>
+      <div id="cart">
+        <div id="category-list">
+          <p class="item-menu">Categories</p>
+          <div class="border"></div>
+        </div>
+        <div id="checkout" class="cart-toggle">
+          <p id="total-item">Total Item : 0</p>
+          <p id="total-price"></p>
+          <p id="delievery">Free delievery above ₹ 140</p>
+          <button class="cart-button">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- For Mobile -->
+    <div id="mobile-view" class="mobile-view">
+      <div class="mobile-top">
+        <div class="logo-box">
+          <img src="/assert//images//logo.jpeg" alt="logo" id="logo" />
+          <i class="fa fa-map-marker your-address" id="mobile-add-address"
+            >Your Address</i
+          >
+        </div>
+        <div class="top-menu">
+          <i class="fa fa-tag"></i>
+          <i class="fa fa-cart-plus" id="mobile-cart-plus"> 0</i>
+        </div>
+      </div>
+      <div class="item-container">
+        <div class="category-header" id="category-header"></div>
+      </div>
+      <div class="mobile-footer">
+        <p>Home</p>
+        <p>Cart</p>
+        <p>offers</p>
+      </div>
+    </div>
+
+    <script src="/js//script.js" type="module"></script>
+  </body>
+</html>
