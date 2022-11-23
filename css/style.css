@@ -2,12 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 
 :root {
-  --brown: #914a1f;
-  --red: #ed6e55;
-  --pink: #fa9a94;
+  --light-green: #53bc9d;
+  --dark-green: #158161;
   --black: #0000;
   --white: #ffffff;
-  --gray: rgb(128, 129, 129);
+  --black: black;
 }
 
 html {
@@ -22,13 +21,10 @@ body {
   height: 100%;
 }
 
-.food-video {
-  margin-top: 15px;
-}
-
 video {
   width: 100%;
-  border: 1px solid var(--brown);
+  border: 3px solid var(--light-green);
+  border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
@@ -40,8 +36,7 @@ video {
   overflow: hidden;
 }
 #menu {
-  background: var(--pink);
-  border-radius: 0px 30px 30px 0px;
+  background: var(--dark-green);
 }
 
 .title {
@@ -58,7 +53,7 @@ video {
   height: 4px;
   margin: 3px auto 30px;
   border-radius: 2px;
-  background: var(--white);
+  background: var(--dark-green);
 }
 
 .menu-item a {
@@ -72,7 +67,7 @@ video {
   font-weight: 300;
 }
 .menu-item a:hover {
-  background: var(--red);
+  background: var(--light-green);
   color: var(--white);
   border-radius: 10px;
 }
@@ -80,6 +75,7 @@ video {
   background: var(--white);
   overflow: auto;
   height: calc(100vh - 86px);
+  padding: 10px;
 }
 #header {
   display: flex;
@@ -89,20 +85,18 @@ video {
   padding-bottom: 10px;
   position: sticky;
   top: 0;
-  background: var(--white);
   z-index: 1;
-  border-radius: 0px 0 15px 15px;
+  border-top: 10px solid var(--dark-green);
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 .your-address {
-  border: 2px solid var(--brown);
   color: var(--white);
-  background-color: var(--brown);
-  padding: 5px 10px;
-  margin-left: 5px;
+  margin-left: 15%;
+  background-color: var(--dark-green);
+  padding: 10px 10px;
   border-radius: 10px;
   overflow: hidden;
   white-space: nowrap;
@@ -125,27 +119,26 @@ video {
 .utilities i {
   font-size: 18px;
   font-weight: 525;
-  margin: 0 16px;
-  border: 2px solid var(--brown);
+  border: 2px solid var(--dark-green);
   padding: 8px 16px;
-  color: var(--brown);
+  color: var(--dark-green);
   border-radius: 20px;
   cursor: pointer;
+  margin: 0 16px;
 }
 .utilities i:hover {
   color: var(--white);
-  background: var(--brown);
+  background: var(--dark-green);
 }
 .utilities i:active {
   color: var(--white);
   background: var(--brown);
 }
 #cart {
-  background: var(--pink);
-  color: var(--white);
+  color: var(--dark-green);
   padding: 0 10px;
   overflow-y: scroll;
-  border-radius: 30px 0 0 30px;
+  border-top: 10px solid var(--dark-green);
 }
 
 .item-menu {
@@ -153,13 +146,14 @@ video {
   font-size: 28px;
   margin-top: 40px;
   text-align: center;
+  font-weight: 800;
 }
 
 #checkout {
   text-align: center;
   margin: 40px auto;
   border-radius: 20px;
-  background: white;
+  background: var(--dark-green);
   padding: 10px 20px;
 }
 #checkout p {
@@ -168,17 +162,17 @@ video {
 #total-price,
 #total-item {
   font-size: 20px;
-  color: var(--brown);
+  color: var(--white);
 }
 #delievery {
   font-size: 20px;
-  color: var(--brown);
+  color: var(--white);
 }
 
 .cart-button {
-  border: none;
-  background: var(--brown);
-  color: white;
+  border: 1px solid var(--white);
+  background: var(--white);
+  color: var(--dark-green);
   padding: 8px 15px;
   border-radius: 20px;
   font-size: 16px;
@@ -188,7 +182,8 @@ video {
 }
 
 .cart-button:hover {
-  opacity: 0.8;
+  background-color: var(--dark-green);
+  color: var(--white);
 }
 
 #mobile-view {
