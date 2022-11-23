@@ -24,7 +24,7 @@ body {
 video {
   width: 100%;
   border: 3px solid var(--light-green);
-  border-radius: 30px;
+  border-radius: 40px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
@@ -75,18 +75,16 @@ video {
   background: var(--white);
   overflow: auto;
   height: calc(100vh - 86px);
-  padding: 10px;
+  padding: 0px 15px;
 }
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 28px;
+  padding: 30px 0;
   position: sticky;
   top: 0;
   z-index: 1;
-  border-top: 10px solid var(--dark-green);
 }
 
 ::-webkit-scrollbar {
@@ -136,15 +134,13 @@ video {
 }
 #cart {
   color: var(--dark-green);
-  padding: 0 10px;
+  padding: 30px 10px;
   overflow-y: scroll;
-  border-top: 10px solid var(--dark-green);
 }
 
 .item-menu {
   margin: 0;
   font-size: 28px;
-  margin-top: 40px;
   text-align: center;
   font-weight: 800;
 }
