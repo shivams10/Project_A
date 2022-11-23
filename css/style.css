@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+
+:root {
+  --brown: #914a1f;
+  --red: #ed6e55;
+  --pink: #fa9a94;
+  --black: #0000;
+  --white: #ffffff;
+  --gray: rgb(128, 129, 129);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+}
+
+.food-video {
+  margin-top: 15px;
+}
+
+video {
+  width: 100%;
+  border: 1px solid var(--brown);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  overflow: hidden;
+}
+#menu {
+  background: var(--pink);
+  border-radius: 0px 30px 30px 0px;
+}
+
+.title {
+  padding: 30px;
+}
+
+#menu img {
+  width: 100px;
+  border-radius: 50%;
+  margin-top: -20px;
+}
+.border {
+  width: 100px;
+  height: 4px;
+  margin: 3px auto 30px;
+  border-radius: 2px;
+  background: var(--white);
+}
+
+.menu-item a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 12px 0;
+  color: var(--white);
+  font-weight: 300;
+}
+.menu-item a:hover {
+  background: var(--red);
+  color: var(--white);
+  border-radius: 10px;
+}
+#food-items {
+  background: var(--white);
+  overflow: auto;
+  height: calc(100vh - 86px);
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  z-index: 1;
+  border-radius: 0px 0 15px 15px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.your-address {
+  border: 2px solid var(--brown);
+  color: var(--white);
+  background-color: var(--brown);
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.your-address:hover {
+  opacity: 0.8;
+}
+.address-box i {
+  font-size: 20px;
+}
+
+.food-items {
+  display: none;
+}
+.cart-toggle {
+  display: block;
+}
+.utilities i {
+  font-size: 18px;
+  font-weight: 525;
+  margin: 0 16px;
+  border: 2px solid var(--brown);
+  padding: 8px 16px;
+  color: var(--brown);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.utilities i:hover {
+  color: var(--white);
+  background: var(--brown);
+}
+.utilities i:active {
+  color: var(--white);
+  background: var(--brown);
+}
+#cart {
+  background: var(--pink);
+  color: var(--white);
+  padding: 0 10px;
+  overflow-y: scroll;
+  border-radius: 30px 0 0 30px;
+}
+
+.item-menu {
+  margin: 0;
+  font-size: 28px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#checkout {
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 20px;
+  background: white;
+  padding: 10px 20px;
+}
+#checkout p {
+  margin: 15px 0;
+}
+#total-price,
+#total-item {
+  font-size: 20px;
+  color: var(--brown);
+}
+#delievery {
+  font-size: 20px;
+  color: var(--brown);
+}
+
+.cart-button {
+  border: none;
+  background: var(--brown);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.cart-button:hover {
+  opacity: 0.8;
+}
+
+#mobile-view {
+  display: none;
+}
