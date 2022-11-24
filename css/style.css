@@ -23,8 +23,7 @@ body {
 
 video {
   width: 100%;
-  border: 3px solid var(--light-green);
-  border-radius: 40px;
+  border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
@@ -51,7 +50,7 @@ video {
 .border {
   width: 100px;
   height: 4px;
-  margin: 3px auto 30px;
+  margin: 3px 0 30px;
   border-radius: 2px;
   background: var(--dark-green);
 }
@@ -112,8 +111,31 @@ video {
   display: none;
 }
 .cart-toggle {
-  display: block;
+  display: none;
 }
+#cart-page{
+    background: var(--white);
+    margin: 40px 10px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+#cart-title{
+    font-size: 35px;
+    margin: 0;
+    color: indianred;
+}
+#cart-page table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+#cart-page table thead td{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
 .utilities i {
   font-size: 18px;
   font-weight: 525;
@@ -130,8 +152,9 @@ video {
 }
 .utilities i:active {
   color: var(--white);
-  background: var(--brown);
+  background: var(--dark-green);
 }
+/*  */
 #cart {
   color: var(--dark-green);
   padding: 30px 10px;
@@ -141,7 +164,6 @@ video {
 .item-menu {
   margin: 0;
   font-size: 28px;
-  text-align: center;
   font-weight: 800;
 }
 
@@ -184,4 +206,112 @@ video {
 
 #mobile-view {
   display: none;
+}
+
+.list-card {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.list-card:hover {
+  background: rgb(255, 216, 222);
+}
+.list-card:hover img {
+  transition: 0.5s all ease-in-out;
+  transform: scale(1.2);
+}
+.list-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.list-name {
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(94, 43, 43);
+}
+.taste-header {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background: whitesmoke;
+}
+#biryani,
+#paneer,
+#chicken,
+#vegetable,
+#chinese,
+#south-indian {
+  margin-top: 40px;
+}
+#paneer #item-card,
+#vegetable #item-card {
+  background: rgb(218, 253, 188);
+}
+#chinese #item-card,
+#south-indian #item-card {
+  background: rgb(221, 243, 243);
+}
+#category-name {
+  margin: 10px;
+  font-size: 35px;
+  color: coral;
+  font-family: "Aclonica", sans-serif;
+}
+#item-card {
+  width: 180px;
+  height: 220px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background: rgb(253, 221, 226);
+  cursor: pointer;
+  transition: 0.5s all step-end;
+}
+#item-card:hover img {
+  transform: scale(1.2);
+}
+#card-top {
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-between;
+}
+#rating {
+  padding: 7px;
+  color: var(--white);
+  background-color:sienna;
+  font-size: 14px;
+  border-radius: 15px;
+}
+.toggle-heart {
+  background: orangered;
+  color: white;
+}
+#item-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+  transition: 0.5s all ease-in-out;
+}
+#item-name{
+    margin: 5px 0;
+    font-weight: 600;
+    color: darkslategray;
+    font-size: 18px;
+}
+#item-price{
+    margin: 0;
+    color: rgb(2, 27, 27);
+    font-weight: 500;
+    font-size: 18px;
 }
