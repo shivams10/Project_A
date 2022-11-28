@@ -1,4 +1,4 @@
-const amburBiryani = "./biryani/Ambur-Chicken-Biryani.jpg";
+const amburBiryani = "biryani/Ambur-Chicken-Biryani.jpg";
 const hyderabadiBiryani = "biryani/Chicken-Biryani-hyd.jpg";
 const eggBiryani = "biryani/egg-biryani.jpeg";
 const fishBiryani = "biryani/goan-fish-biryani.jpg";
