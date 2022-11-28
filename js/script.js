@@ -1,6 +1,5 @@
 import { foodItem } from "./foodItem.js";
 
-const baseUrl = "../assert/images/";
 const foodCategories = [biryani, paneer, chicken, vegetable, chinese];
 const localStorageAddress = localStorage.getItem("address");
 
@@ -62,7 +61,7 @@ function displayItems() {
     cardTop.appendChild(heart);
 
     var img = document.createElement("img");
-    img.src = baseUrl + item.img;
+    img.src =  item.img;
 
     var itemName = document.createElement("p");
     itemName.setAttribute("id", "item-name");
@@ -118,7 +117,7 @@ function selectTaste() {
     listCard.setAttribute("class", "list-card");
 
     var listImg = document.createElement("img");
-    listImg.src = baseUrl + item.img;
+    listImg.src =  item.img;
 
     var listName = document.createElement("a");
     listName.setAttribute("class", "list-name");
@@ -168,7 +167,7 @@ function cartItems() {
 
     var rowData1 = document.createElement("td");
     var img = document.createElement("img");
-    img.src = baseUrl + item.img;
+    img.src =  item.img;
     rowData1.appendChild(img);
 
     var rowData2 = document.createElement("td");
