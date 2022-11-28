@@ -23,6 +23,7 @@ function addAddress() {
 }
 
 document.getElementById("offer").addEventListener("click", offer);
+document.getElementById("m-offer").addEventListener("click", offer);
 function offer() {
   alert("No offers available");
 }

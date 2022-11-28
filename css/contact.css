@@ -61,10 +61,18 @@
 }
 
 .wrapper .submit-button input[type="submit"]:hover {
-    background-color: #158161;
-  }
+  background-color: #158161;
+}
 
-#error_message {
+#error-message {
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+#m-error-message {
   margin-bottom: 20px;
   background: #fe8b8e;
   padding: 0px;
@@ -81,8 +89,8 @@
   }
 }
 
-@media screen and (max-width: 540px){
-.wrapper{
+@media screen and (max-width: 540px) {
+  .wrapper {
     max-width: 250px;
-}
+  }
 }

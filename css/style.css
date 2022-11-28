@@ -48,7 +48,7 @@ video {
   margin-top: -20px;
 }
 .border {
-  width: 100px;
+  /* width: 100px; */
   height: 4px;
   margin: 3px 0 30px;
   border-radius: 2px;
@@ -85,7 +85,6 @@ video {
   position: sticky;
   top: 0;
   z-index: 1;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -328,6 +327,9 @@ video {
   background-color: sienna;
   font-size: 14px;
   border-radius: 15px;
+}
+.fa{
+  -webkit-font-smoothing:auto!important;
 }
 .fa-plus {
   padding: 6px;
