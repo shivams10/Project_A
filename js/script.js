@@ -16,6 +16,7 @@ function addAddress() {
   var address = prompt("Enter your address", "");
   if (address.trim()) {
     document.getElementById("add-address").innerText = " " + address;
+    document.getElementById("m-add-address").innerText = " " + address;
     localStorage.setItem("address", address);
   } else {
     alert("Address not added");
