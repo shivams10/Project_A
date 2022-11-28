@@ -1,0 +1,88 @@
+.container {
+  grid-template-columns: 200px 1fr;
+}
+
+#header {
+  border-bottom: 1px solid #53bc9d;
+}
+
+#food-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px #53bc9d;
+}
+
+.wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.wrapper .input_field {
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+  border: 1px solid #e0e0e0;
+  width: 90%;
+  padding: 10px;
+}
+
+.wrapper textarea {
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .submit-button input[type="submit"] {
+  border: 0px;
+  margin-top: 15px;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+  background-color: #53bc9d;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+.wrapper .submit-button input[type="submit"]:hover {
+    background-color: #158161;
+  }
+
+#error_message {
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
+  .item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 540px){
+.wrapper{
+    max-width: 250px;
+}
+}

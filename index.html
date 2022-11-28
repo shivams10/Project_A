@@ -13,25 +13,26 @@
   </head>
   <body>
     <!-- For Desktop -->
-    <div class="container">
+    <div class="container" tab-content>
       <div id="menu">
         <div class="title">
           <img src="./assert//images/logo.jpeg" alt="logo" />
         </div>
         <div class="menu-item">
-          <a href="">Home</a>
-          <a  id="your-cart">Your Cart</a>
-          <a href="">Services</a>
-          <a href="">Contact</a>
+          <a>Home</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html">Contact</a>
         </div>
       </div>
       <div id="food-container">
         <header id="header">
           <div class="address-box">
-            <i class="fa fa-map-marker your-address" id="add-address"> Your Address</i>
+            <i class="fa fa-map-marker your-address" id="add-address">
+              Your Address</i
+            >
           </div>
           <div class="utilities">
-            <i class="fa fa-tags"id="offer"> Offers</i>
+            <i class="fa fa-tags" id="offer"> Offers</i>
             <i class="fa fa-cart-plus" id="cart-plus"> 0 items</i>
           </div>
         </header>
@@ -60,10 +61,8 @@
           <div id="paneer" class="d-paneer">
             <p id="category-name">Paneer Mania</p>
           </div>
-          <div id="south-indian" class="d-south-indian">
-            <p id="category-name">South Indian</p>
-          </div>
         </div>
+
         <div id="cart-page" class="cart-toggle">
           <p id="cart-title">Cart Items</p>
           <p id="m-total-amount">Total Amout : 100</p>
@@ -77,7 +76,7 @@
             <tbody id="table-body"></tbody>
           </table>
           <div class="button-box">
-            <button class="cart-button">Checkout</button>
+            <button class="cart-button" onclick="checkOut()"">Checkout</button>
           </div>
         </div>
       </div>
@@ -90,35 +89,59 @@
           <p id="total-item">Total Item : 0</p>
           <p id="total-price"></p>
           <p id="delievery">Free delievery above ₹ 149</p>
-          <button class="cart-button">Checkout</button>
+          <button class="cart-button" onclick="checkOut()">Checkout</button>
         </div>
       </div>
     </div>
-
     <!-- For Mobile -->
     <div id="mobile-view" class="mobile-view">
       <div class="mobile-top">
         <div class="logo-box">
-          <img src="./assert//images//logo.jpeg" alt="logo" id="logo" />
-          <i class="fa fa-map-marker your-address" id="mobile-add-address"
-            >Your Address</i
+          <img src="./assert/images/logo.jpeg" alt="" id="logo" />
+          <i class="fa fa-map-marker your-address" id="m-add-address">
+            Your Address</i
           >
         </div>
         <div class="top-menu">
           <i class="fa fa-tag"></i>
-          <i class="fa fa-cart-plus" id="mobile-cart-plus"> 0</i>
+          <i class="fa fa-cart-plus" id="m-cart-plus"> 0</i>
         </div>
       </div>
+
       <div class="item-container">
         <div class="category-header" id="category-header"></div>
+
+        <div id="food-items" class="food-items">
+          <div id="biryani" class="m-biryani">
+            <p id="category-name">Biryani</p>
+          </div>
+          <div id="chicken" class="m-chicken">
+            <p id="category-name">Chicken Delicious</p>
+          </div>
+          <div id="paneer" class="m-paneer">
+            <p id="category-name">Paneer Mania</p>
+          </div>
+          <div id="vegetable" class="m-vegetable">
+            <p id="category-name">Pure Veg Dishes</p>
+          </div>
+          <div id="chinese" class="m-chinese">
+            <p id="category-name">Chinese Corner</p>
+          </div>
+        </div>
       </div>
+
       <div class="mobile-footer">
-        <p>Home</p>
-        <p>Cart</p>
-        <p>offers</p>
+        <a>Home</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
       </div>
     </div>
-
+    <script type="text/javascript">
+        function checkOut(){
+            alert('Order Placed')
+            location.reload();
+        }
+    </script>
     <script src="./js//script.js" type="module"></script>
   </body>
 </html>
