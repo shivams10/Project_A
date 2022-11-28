@@ -1,4 +1,4 @@
-const amburBiryani = "biryani/Ambur-Chicken-Biryani.jpg";
+const amburBiryani = "./biryani/Ambur-Chicken-Biryani.jpg";
 const hyderabadiBiryani = "biryani/Chicken-Biryani-hyd.jpg";
 const eggBiryani = "biryani/egg-biryani.jpeg";
 const fishBiryani = "biryani/goan-fish-biryani.jpg";
@@ -27,7 +27,7 @@ const vegCurry = "vegetable/vegetable-curry.jpeg";
 const vegKolhapur = "vegetable/vegetable-kolhapuri.jpg";
 const vegMasala = "vegetable/vegetable-masala.jpg";
 const vegPakora = "vegetable/vegetable-pakora.jpg";
-const momos = "chinese/cabbage-momos-.jpg";
+const momos = "chinese/cabbage-momos-.jpg"; 
 const chickenManchurian = "chinese/ChickenManchurian.jpg";
 const chiliChicken = "chinese/Chili-Chicken.jpg";
 const chowmein = "chinese/chowmin.jpg";
