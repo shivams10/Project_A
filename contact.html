@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surprise Meal</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- For Desktop -->
+    <div class="container" tab-content>
+      <div id="menu">
+        <div class="title">
+          <img src="./assert//images/logo.jpeg" alt="logo" />
+        </div>
+        <div class="menu-item">
+          <a href="./index.html">Home</a>
+          <a href="./services.html">Services</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+      <div id="food-container">
+        <header id="header">
+          <div class="address-box">
+            <i class="fa fa-map-marker your-address" id="add-address">
+              Your Address</i
+            >
+          </div>
+        </header>
+        <div id="food-items" class="desktop-food-items">
+          <section class="wrapper">
+            <h2>Contact us</h2>
+            <div id="error-message"></div>
+            <form id="myform" onsubmit="return validate();">
+              <div class="input_field">
+                <input type="text" placeholder="Name" id="name" />
+              </div>
+              <div class="input_field">
+                <input type="text" placeholder="Subject" id="subject" />
+              </div>
+              <div class="input_field">
+                <input type="text" placeholder="Phone" id="phone" />
+              </div>
+              <div class="input_field">
+                <input type="text" placeholder="Email" id="email" />
+              </div>
+              <div class="input_field">
+                <textarea placeholder="Message" id="message"></textarea>
+              </div>
+              <div class="submit-button">
+                <input type="submit" />
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- For Mobile -->
+    <div id="mobile-view" class="mobile-view">
+      <div class="mobile-top">
+        <div class="logo-box">
+          <img src="./assert/images/logo.jpeg" alt="" id="logo" />
+          <i class="fa fa-map-marker your-address" id="m-add-address">
+            Your Address</i
+          >
+        </div>
+      </div>
+      <div class="item-container">
+        <section class="wrapper">
+          <h2>Contact us</h2>
+          <div id="m-error-message"></div>
+          <form id="myform" onsubmit="return validate();">
+            <div class="input_field">
+              <input type="text" placeholder="Name" id="name" />
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="Subject" id="subject" />
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="Phone" id="phone" />
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="Email" id="email" />
+            </div>
+            <div class="input_field">
+              <textarea placeholder="Message" id="message"></textarea>
+            </div>
+            <div class="submit-button">
+              <input type="submit" />
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="mobile-footer">
+        <a href="./index.html">Home</a>
+        <a href="./services.html">Services</a>
+        <a>Contact</a>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/contact.js"></script>
+  </body>
+</html>

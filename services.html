@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surprise Meal</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- For Desktop -->
+    <div class="container" tab-content>
+      <div id="menu">
+        <div class="title">
+          <img src="./assert//images/logo.jpeg" alt="logo" />
+        </div>
+        <div class="menu-item">
+          <a href="./index.html">Home</a>
+          <a>Services</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+      <div id="food-container">
+        <header id="header">
+          <div class="address-box">
+            <i class="fa fa-map-marker your-address" id="add-address">
+              Your Address</i
+            >
+          </div>
+        </header>
+        <div id="food-items" class="desktop-food-items">
+          <section class="services">
+            <div class="s-heading">
+              <h1>Services</h1>
+              <p>We Provide The Best In Class Servies For Our Customers</p>
+            </div>
+            <div class="s-box-container">
+              <div class="s-box">
+                <div class="bar"></div>
+                <img alt="1" src="./assert//images/order-online.webp" />
+                <h1>Order online</h1>
+                <p>
+                  Order online and enjoy your food at your home, workplace, etc.
+                </p>
+                <a class="s-button" href="#">More</a>
+              </div>
+              <div class="s-box">
+                <div class="bar"></div>
+                <img alt="2" src="./assert/images/offer.jpeg" />
+                <h1>Enjoy Offers</h1>
+                <p>Enjoy our attractive offers on different food item.</p>
+                <a class="s-button" href="#">More</a>
+              </div>
+              <div class="s-box">
+                <div class="bar"></div>
+                <img alt="3" src="./assert/images/customer.jpeg" />
+                <h1>Customer services</h1>
+                <p>Our supportive staff will help you with your order 24x7.</p>
+                <a class="s-button" href="#">More</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- For Mobile -->
+    <div id="mobile-view" class="mobile-view">
+      <div class="mobile-top">
+        <div class="logo-box">
+          <img src="./assert/images/logo.jpeg" alt="" id="logo" />
+          <i class="fa fa-map-marker your-address" id="m-add-address">
+            Your Address</i
+          >
+        </div>
+      </div>
+      <div class="item-container">
+        <section class="services">
+          <div class="s-heading">
+            <h1>Services</h1>
+            <p>We Provide The Best In Class Servies For Our Customers</p>
+          </div>
+          <div class="s-box-container">
+            <div class="s-box">
+              <div class="bar"></div>
+              <img alt="1" src="./assert//images/order-online.webp" />
+              <h1>Order online</h1>
+              <p>
+                Order online and enjoy your food at your home, workplace, etc.
+              </p>
+              <a class="s-button" href="#">More</a>
+            </div>
+            <div class="s-box">
+              <div class="bar"></div>
+              <img alt="2" src="./assert/images/offer.jpeg" />
+              <h1>Enjoy Offers</h1>
+              <p>Enjoy our attractive offers on different food item.</p>
+              <a class="s-button" href="#">More</a>
+            </div>
+            <div class="s-box">
+              <div class="bar"></div>
+              <img alt="3" src="./assert/images/customer.jpeg" />
+              <h1>Customer services</h1>
+              <p>Our supportive staff will help you with your order 24x7.</p>
+              <a class="s-button" href="#">More</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="mobile-footer">
+        <a href="./index.html">Home</a>
+        <a href="">Services</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      const LocalStorageAddress = localStorage.getItem("address");
+      console.log(LocalStorageAddress)
+      if (LocalStorageAddress) {
+        document.getElementById("add-address").innerText =
+          " " + LocalStorageAddress;
+        document.getElementById("m-add-address").innerText =
+          " " + LocalStorageAddress;
+      }
+    </script>
+  </body>
+</html>
