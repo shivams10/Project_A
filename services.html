@@ -74,9 +74,7 @@
       <div class="mobile-top">
         <div class="logo-box">
           <img src="./assert/images/logo.jpeg" alt="" id="logo" />
-          <i class="fa fa-map-marker your-address" id="m-add-address">
-            Your Address</i
-          >
+          <i class="fa fa-map-marker your-address" id="m-add-address"> </i>
         </div>
       </div>
       <div class="item-container">
@@ -120,12 +118,28 @@
     </div>
     <script type="text/javascript">
       const LocalStorageAddress = localStorage.getItem("address");
-      console.log(LocalStorageAddress)
+      console.log(LocalStorageAddress);
       if (LocalStorageAddress) {
         document.getElementById("add-address").innerText =
           " " + LocalStorageAddress;
         document.getElementById("m-add-address").innerText =
           " " + LocalStorageAddress;
+      }
+      document
+        .getElementById("add-address")
+        .addEventListener("click", addAddress);
+      document
+        .getElementById("m-add-address")
+        .addEventListener("click", addAddress);
+      function addAddress() {
+        var address = prompt("Enter your address", "");
+        if (address.trim()) {
+          document.getElementById("add-address").innerText = " " + address;
+          document.getElementById("m-add-address").innerText = " " + address;
+          localStorage.setItem("address", address);
+        } else {
+          alert("Address not added");
+        }
       }
     </script>
   </body>

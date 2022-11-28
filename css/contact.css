@@ -28,11 +28,11 @@
   letter-spacing: 3px;
 }
 
-.wrapper .input_field {
+.wrapper .input-field {
   margin-bottom: 10px;
 }
 
-.wrapper .input_field input[type="text"],
+.wrapper .input-field input[type="text"],
 .wrapper textarea {
   border: 1px solid #e0e0e0;
   width: 90%;
