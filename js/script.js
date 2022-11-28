@@ -1,4 +1,4 @@
-import { foodItem } from "./fooditem.js";
+import { foodItem } from "./foodItem";
 
 const baseUrl = "../assert/images/";
 const foodCategories = [biryani, paneer, chicken, vegetable, chinese];
