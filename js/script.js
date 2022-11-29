@@ -248,7 +248,6 @@ function decrementItem() {
         .classList.toggle("toggle-category");
       document.getElementById("checkout").classList.toggle("cart-toggle");
       flag = false;
-      alert("Currently no item in cart!");
     }
   }
   totalAmount();
