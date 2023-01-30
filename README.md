@@ -8,7 +8,7 @@
 1. The home page includes all the food items, a user can add food to the cart on this page.
 2. The service page includes all the services provided by company.
 3. The contact page with form validation.
-- Created a raw json data to fetch and display food item cards.
+- Created a raw json data to fetch and display food items.
 - CRUD operation with Local Storage.
 
 ## Third Party Libraries
